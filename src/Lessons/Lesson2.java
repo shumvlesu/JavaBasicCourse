@@ -5,14 +5,17 @@ import java.util.Arrays;
 public class Lesson2 {
 
     public static void main(String[] args) {
+        //использование switch
         System.out.println(convertSeasonBySwitch(2));
 
+        //цикл for
         int i = 0;
         for (; i<15; i++){
             System.out.println(i);
         }
         System.out.println("Последнее значение i было - "+i);
 
+        //массивы
         final int SIZE = 5;
         int[] data = new int[SIZE];
         Arrays.fill(data,2);
