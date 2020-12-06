@@ -64,7 +64,7 @@ public class HomeWork3 {
                 in.next();
             }
         }
-        System.out.println("\nВы проиграли! :(");
+        System.out.println("\nВы проиграли! :( это была цифра -"+hiddenNumber);
     }
 
     private static void endGameQuestion() {
