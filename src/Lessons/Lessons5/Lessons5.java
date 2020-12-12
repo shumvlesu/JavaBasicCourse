@@ -10,5 +10,11 @@ public class Lessons5 {
     Cat cat2= new Cat("Борис Николаевич", "Рыжий",3);
     //обращение к перегруженному конструктору с одним параметром
     Cat cat3= new Cat("Шава");
+
+    cat1.printInfo();
+    cat2.printInfo();
+    cat3.printInfo();
+
+
   }
 }
