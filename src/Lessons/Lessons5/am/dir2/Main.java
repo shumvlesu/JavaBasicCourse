@@ -1,5 +1,7 @@
 package Lessons.Lessons5.am.dir2;
 
+import Lessons.Lessons5.am.dir1.CatNew;
+
 public class Main {
 
     public static void main(String[] args) {

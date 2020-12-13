@@ -1,7 +1,7 @@
 package Lessons.Lessons5.am.dir2;
 
-import lesson5.Cat;
-import lesson5.am.dir1.CatNew;
+//import lesson5.Cat;
+import  Lessons.Lessons5.am.dir1.CatNew;
 
 public class CatNewNew extends CatNew {
 
