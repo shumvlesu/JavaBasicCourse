@@ -11,6 +11,8 @@ public class Lessons5 {
     //обращение к перегруженному конструктору с одним параметром
     Cat cat3= new Cat("Шава");
 
+    cat1.setAge(-1);
+
     cat1.printInfo();
     cat2.printInfo();
     cat3.printInfo();

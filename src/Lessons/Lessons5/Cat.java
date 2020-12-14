@@ -4,9 +4,9 @@ import java.util.Locale;
 
 public class Cat {
 
-  String name;
-  String color;
-  int age;
+  protected String name;
+  protected String color;
+  private int age;
 
   //конструктор класса Cat
   //можно создать из шаблона используя горячие клавиши Alt+Ins
@@ -35,4 +35,16 @@ public class Cat {
     return String.format("Котик %s имеет цвет %s и возраст %d", name,color,age);
   }
 
+  public int getAge() {
+    return age;
+  }
+
+  public void setAge(int age) {
+    if (age>=0 && age<30) {
+      this.age = age;
+    }
+    else {
+    System.err.println("Неверный возраст");
+    }
+  }
 }
