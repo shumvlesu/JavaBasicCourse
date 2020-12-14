@@ -35,7 +35,7 @@ public class Person {
   //* Внутри класса «Сотрудник» написать метод, который выводит информацию об объекте в консоль;
   @Override
   public String toString(){
-    return String.format("Это %s, должность %s, с зарплатой: %d, email-%s,  возраст %d. Телефон:%s", FIO, position, getSalary(), email, getAge(),tel);
+    return String.format("Это %s, должность: %s, с зарплатой: %d, email: %s,  возраст: %d. Телефон: %s", FIO, position, getSalary(), email, getAge(),tel);
   }
 
   public int getSalary() {
