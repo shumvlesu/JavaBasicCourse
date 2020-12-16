@@ -23,4 +23,15 @@ public class Dog extends Animal {
             " isBark=" + isBark +
             '}';
   }
+
+  @Override
+  public void voice() {
+    System.out.println("Гав гав!");
+    //super.voice();
+  }
+
+  @Override
+  public void run() {
+
+  }
 }
