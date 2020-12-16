@@ -11,10 +11,21 @@ public class Lessons5 {
     //обращение к перегруженному конструктору с одним параметром
     Cat cat3= new Cat("Шава");
 
+    Cat cat4 = new Cat("Том");
+
+
+
+    cat1.setAge(-1);
+
     cat1.printInfo();
     cat2.printInfo();
     cat3.printInfo();
 
+    cat4 = null;
+    //просим гарбедж коллектор прийти к нам. он может прийти или не прийти по его "желанию"
+    System.gc();
+
+    System.out.println(Cat.getCatCount());
 
   }
 }

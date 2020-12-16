@@ -4,9 +4,11 @@ import java.util.Locale;
 
 public class Cat {
 
-  String name;
-  String color;
-  int age;
+  protected String name;
+  protected String color;
+  private int age;
+  //Статитическая переменная которая действует для самого класса но не для экземпляров класса.
+  private static int catCount;
 
   //конструктор класса Cat
   //можно создать из шаблона используя горячие клавиши Alt+Ins
@@ -14,8 +16,9 @@ public class Cat {
       this.name = name != null ? name.toUpperCase() : null;
       this.color = color != null ? color.toUpperCase() : null;
       this.age = age;
+      catCount++;
 
-    System.out.println("Я родился! Меня зовут "+this.name);
+    System.out.println("Я родился! Меня зовут "+this.name+". А всего котов "+catCount);
   }
 
   public Cat(String name) {
@@ -23,6 +26,12 @@ public class Cat {
     //this.name = name;
     //ссылаемся на верхний конструктор
     this(name,null,0);
+  }
+
+  //из статических методов мы не видим поля и методы экземпляров класса
+  //а из  нестатических методов и полей (элементов класса) мы можем видеть статические методы и поля.
+  public static int getCatCount() {
+    return catCount;
   }
 
   //метод класса Cat
@@ -35,4 +44,25 @@ public class Cat {
     return String.format("Котик %s имеет цвет %s и возраст %d", name,color,age);
   }
 
+  public int getAge() {
+    return age;
+  }
+
+  public void setAge(int age) {
+    if (age>=0 && age<30) {
+      this.age = age;
+    }
+    else {
+    System.err.println("Неверный возраст");
+    }
+  }
+
+  //отрабатывает когда уничтожается значение экземпляра объекта в памяти (куче)
+  @Override
+  protected void finalize() throws Throwable {
+    //super.finalize();
+    catCount--;
+    System.out.println("Один котик - "+name+" сбежал, теперь их:"+catCount);
+
+  }
 }
