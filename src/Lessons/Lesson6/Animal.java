@@ -1,6 +1,6 @@
 package Lessons.Lesson6;
 
-public class Animal {
+public class Animal extends Object{  //Object общий родитель для все классов , нулевой так сказать класс(объект).
 
   protected String name;
   private String color;
@@ -13,12 +13,12 @@ public class Animal {
   }
 
   public Animal(String name) {
-    this(name,"Серобуромалиновый",0);
+    this(name, "Серобуромалиновый", 0);
   }
 
-  public Animal() {
-    this(null);
-  }
+  //public Animal() {
+  //  this(null);
+  //}
 
   @Override
   public String toString() {
