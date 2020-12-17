@@ -7,7 +7,7 @@ public class Dog extends Animal implements Swiming{
   }
 
   @Override
-  public void swim(int speed) {
+  public void swim(int meters) {
     System.out.println("Я плаваю!");
   }
 
