@@ -1,4 +1,4 @@
-package HomeWork1.HomeWork6;
+package HomeWork.HomeWork6;
 
 //Так как у меня не все животные плавают я решил возможность плавать в отдельный интерфейс
 public interface Swiming {

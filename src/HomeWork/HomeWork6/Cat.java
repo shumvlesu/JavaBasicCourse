@@ -1,4 +1,4 @@
-package HomeWork1.HomeWork6;
+package HomeWork.HomeWork6;
 
 public class Cat extends Animal {
 

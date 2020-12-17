@@ -1,4 +1,4 @@
-package HomeWork1.HomeWork5;
+package HomeWork.HomeWork5;
 
 public class Person {
 

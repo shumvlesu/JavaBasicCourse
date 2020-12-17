@@ -1,4 +1,4 @@
-package HomeWork1;
+package HomeWork;
 
 public class HomeWork1 {
 
