@@ -34,7 +34,7 @@ public class Dog extends Animal implements Swiming {
   }
 
   @Override
-  public void jump(int height) {
+  public void jump(double height) {
     //System.out.println(height <= DOG_JUMP_METERS);
     System.out.println("Прыжок на " + height + ", ограничение: " + DOG_JUMP_METERS + ", результат:" + (height <= DOG_JUMP_METERS));
   }

@@ -1,7 +1,5 @@
 package HomeWork1.HomeWork6;
 
-import Lessons.Lesson6.Flying;
-
 public class Main {
   public static void main(String[] args) {
 
@@ -9,7 +7,7 @@ public class Main {
     Animal cat = new Cat("Васька");
     Dog dog = new Dog("Шарик");
 
-    Animal[] animals = {dog, cat};
+    Animal[] animals = {dog, cat, new Cat(), new Dog()};
     for (Animal animal : animals) {
       System.out.println(animal.toString());
       animal.jump(20);

@@ -26,7 +26,7 @@ public class Cat extends Animal {
 
 
   @Override
-  public void jump(int height) {
+  public void jump(double height) {
     //System.out.println(height <= CAT_JUMP_METERS);
     System.out.println("Прыжок на "+height+", ограничение: "+CAT_JUMP_METERS+", результат:"+(height <= CAT_JUMP_METERS));
   }
