@@ -17,7 +17,7 @@ public class Dog extends Animal implements Swiming{
   }
 
   @Override
-  public void run(int speed) {
+  public void run(int meters) {
 
   }
 

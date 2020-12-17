@@ -11,7 +11,7 @@ public class Cat extends Animal {
   }
 
   @Override
-  public void run(int speed) {
+  public void run(int meters) {
 
   }
 }
