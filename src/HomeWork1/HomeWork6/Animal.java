@@ -1,6 +1,6 @@
 package HomeWork1.HomeWork6;
 
-public abstract class Animal {
+public abstract class Animal implements Runing,Jumping {
 
   protected String name;
 

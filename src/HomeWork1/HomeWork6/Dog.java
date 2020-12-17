@@ -1,6 +1,6 @@
 package HomeWork1.HomeWork6;
 
-public class Dog extends Animal implements Swiming,Runing,Jumping{
+public class Dog extends Animal implements Swiming{
 
   public Dog(String name) {
     super(name);
