@@ -58,7 +58,7 @@ public class StringConcat {
 
 
 
-    
+
     System.out.println("Замена подстрокой в строке:");
     System.out.println(a3.replace("My", "Our")); //Заменяем все "My" на "Our" в строке а3 аналог стрЗаменить в 1с
     System.out.println(a3.replaceAll("My", "Our"));
