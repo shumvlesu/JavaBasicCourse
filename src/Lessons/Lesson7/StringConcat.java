@@ -28,8 +28,11 @@ public class StringConcat {
       System.out.println("Слово: " + word);
     }
 
-    System.out.println(a1.equals(a2));
-    System.out.println(a1.compareTo(a2));
+    System.out.println(a1.equals(a2)); //сравнивание именно значений
+    System.out.println(a1.compareTo(a2)); //compareTo применяется обычно для сортировки. Тут будет возвращено 4 так как
+    //первый символ в строке ("H") на 4 символа дальше первого символа во второй строке("D")
+    //Получается если число положительное то значит строка а2 должна быть выше в сортировки строки а1
+    //а если отрицательное то а1 должна быть выше а2 в сортировке
 
     String space = " ";
     System.out.println(space == null);
