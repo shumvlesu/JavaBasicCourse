@@ -1,7 +1,6 @@
 package Lessons.Lesson7;
 
 import java.io.*;
-import java.util.Random;
 
 public class StringConcat {
   public static void main(String[] args) throws IOException {
@@ -31,16 +30,12 @@ public class StringConcat {
     }
 
 
-
-
     System.out.println("Сравнивание строк:");
     System.out.println(a1.equals(a2)); //сравнивание именно значений
     System.out.println(a1.compareTo(a2)); //compareTo применяется обычно для сортировки. Тут будет возвращено 4 так как
     //первый символ в строке ("H") на 4 символа дальше первого символа во второй строке("D")
     //Получается если число положительное то значит строка а2 должна быть выше в сортировки строки а1
     //а если отрицательное то а1 должна быть выше а2 в сортировке
-
-
 
 
     System.out.println("Проверка на пустату строк:");
@@ -50,13 +45,9 @@ public class StringConcat {
     System.out.println(space.isBlank());//скажет что строка пустая (true) так как isBlank проверяет на истинно пустоту строки.
 
 
-
-
     System.out.println("Выделение(копирование) подстроки из строки:");
     System.out.println(a3.substring(6));
     System.out.println(a3.substring(6, 16)); //1 параметр это начало откуда выделяем , второй параметр это если нужно окончание выделения
-
-
 
 
     System.out.println("Замена подстрокой в строке:");
@@ -66,21 +57,15 @@ public class StringConcat {
     System.out.println(a3.replaceAll("l", "!"));
 
 
-
-
     System.out.println("Нахождение индекса символа в строке:");
     System.out.println(a3.indexOf(' '));//Узнаем какой индекс в строке имеет пробел
     System.out.println(a3.charAt(16));//Узнаем какой символ соответствует 16 индексу в строке
 
 
-
-
-
-
-//        File file = new File("X:\\Ya.Disk\\work\\Lessons\\java_1\\src\\lesson7\\string\\resources\\text.txt");
-    var file = new File("src/lesson7/string/resources/java_platform.txt");
+    //File file = new File("X:\\Ya.Disk\\work\\Lessons\\java_1\\src\\lesson7\\string\\resources\\text.txt");
+    var file = new File("src/Lessons/Lesson7/resources/java_platform.txt");
     BufferedInputStream is = new BufferedInputStream(new FileInputStream(file));
-//        FileInputStream is = new FileInputStream(file);
+    //FileInputStream is = new FileInputStream(file);
 
     System.out.println(new String(is.readAllBytes()));
 
