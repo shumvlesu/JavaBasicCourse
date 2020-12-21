@@ -62,20 +62,33 @@ public class StringConcat {
     System.out.println(a3.charAt(16));//Узнаем какой символ соответствует 16 индексу в строке
 
 
+
+
+    //Абсолютный путь
     //File file = new File("X:\\Ya.Disk\\work\\Lessons\\java_1\\src\\lesson7\\string\\resources\\text.txt");
-    var file = new File("src/Lessons/Lesson7/resources/java_platform.txt");
-    BufferedInputStream is = new BufferedInputStream(new FileInputStream(file));
-    //FileInputStream is = new FileInputStream(file);
+    //Отностительный путь
+    File file = new File("src\\Lessons\\Lesson7\\resources\\text.txt");
+    FileInputStream is = new FileInputStream(file);
+    System.out.println(new String(is.readAllBytes()));//метод readAllBytes() считывает байты нужно перевести их в Строку
 
-    System.out.println(new String(is.readAllBytes()));
 
-    StringBuilder sb = new StringBuilder();
-    int n;
+    //чтение большого файла
+    //var говорит о том что переменная примет любой тип помещаемого в переменную значения. это более удобно. называется автоприведение типа.
+    var file2 = new File("src/Lessons/Lesson7/resources/java_platform.txt");
+    BufferedInputStream is2 = new BufferedInputStream(new FileInputStream(file2));
+    //1й способ вывода
+    //System.out.println(new String(is2.readAllBytes()));
 
-    while ((n = is.read()) != -1) {
-      sb.append((char) n);
+    //2й способ вывода
+    StringBuilder sb = new StringBuilder(); //создаем пустую строку
+    //Если мы просто бы сделали sb = ""; то мы каждый раз добавляя к строке n создавали бы новый объект
+    //что сожрало бы у нас кучу памяти и затормозило бы выполнение программы.
+
+    int n; //
+    while ((n = is2.read()) != -1) { // присваиваем n значение из is.read() и сразу сравниваем с -1. Так у нас и n имеет значение и сравнение сразу делаем.
+      //-1 это отсутствие чего либо в файле.
+      sb.append((char) n); //в объект добавляем сивол
     }
-
     System.out.println(sb);
 
   }
