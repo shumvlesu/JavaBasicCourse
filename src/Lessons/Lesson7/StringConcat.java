@@ -75,6 +75,7 @@ public class StringConcat {
     //чтение большого файла
     //var говорит о том что переменная примет любой тип помещаемого в переменную значения. это более удобно. называется автоприведение типа.
     var file2 = new File("src/Lessons/Lesson7/resources/java_platform.txt");
+    //Создаем буфер в опер памяти,и закидываем файл туда, чем читать файл с жд напрямую
     BufferedInputStream is2 = new BufferedInputStream(new FileInputStream(file2));
     //1й способ вывода
     //System.out.println(new String(is2.readAllBytes()));
