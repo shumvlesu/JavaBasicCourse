@@ -5,34 +5,37 @@ import java.awt.event.*;
 
 public class KeyboardExample {
 
-    static public class MyWindow extends JFrame {
-        String str;
+  static public class MyWindow extends JFrame {
+    String str;
 
-        public MyWindow() {
-            setBounds(500, 500, 400, 300);
-            setTitle("Demo");
-            setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-            JTextField field = new JTextField();
-            add(field);
+    public MyWindow() {
+      setBounds(500, 500, 400, 300);
+      setTitle("Demo");
+      setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+      JTextField field = new JTextField();
+      add(field);
 
-//            field.addActionListener(new KeyboardListener());
+      //1 способ отлавливание события
+      //field.addActionListener(new KeyboardListener());
 
 
+      //2 способ отлавливание события с помощью лямбда выражения
+           /* field.addActionListener(e -> {
+                System.out.println(field.getText());
+                field.setText("");
+            });*/
 
-//            field.addActionListener(e -> {
-//                System.out.println(field.getText());
-//                field.setText("");
-//            });
-//
-//            field.addActionListener(new ActionListener() {
-//                @Override
-//                public void actionPerformed(ActionEvent e) {
-//                    System.out.println(field.getText());
-//                    field.setText("");
-//                }
-//            });
-//
-            field.addKeyListener(new KeyAdapter() {
+      //3 способ отлавливание события с помощью анонимного класса
+           /* field.addActionListener(new ActionListener() {
+                @Override
+                public void actionPerformed(ActionEvent e) {
+                    System.out.println(field.getText());
+                    field.setText("");
+                }
+            });*/
+
+        //4 способ, отлавливаем нажатие клавиши
+        /*field.addKeyListener(new KeyAdapter() {
                 @Override
                 public void keyTyped(KeyEvent e) {
                    if (e.isShiftDown()) {
@@ -42,15 +45,15 @@ public class KeyboardExample {
                        System.out.println(e.getKeyChar() + " down");
                    }
                 }
-            });
-//
-            setVisible(true);
-        }
+            });*/
+
+      setVisible(true);
     }
+  }
 
 
-    public static void main(String[] args) {
-        new MyWindow();
-    }
+  public static void main(String[] args) {
+    new MyWindow();
+  }
 
 }

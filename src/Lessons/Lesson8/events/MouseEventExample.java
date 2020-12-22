@@ -13,6 +13,7 @@ public class MouseEventExample {
             JPanel pan = new JPanel();
             add(pan);
 
+            //отлавливаем события мышки
             pan.addMouseListener(new MouseAdapter() {
                 @Override
                 public void mouseReleased(MouseEvent e) {
