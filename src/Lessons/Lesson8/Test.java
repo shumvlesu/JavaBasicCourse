@@ -1,4 +1,4 @@
-package lesson8;
+package Lessons.Lesson8;
 
 import javax.swing.*;
 

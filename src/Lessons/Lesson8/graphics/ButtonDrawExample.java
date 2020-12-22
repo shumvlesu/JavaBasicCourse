@@ -1,4 +1,4 @@
-package lesson8.graphics;
+package Lessons.Lesson8.graphics;
 
 import javax.swing.*;
 import java.awt.*;

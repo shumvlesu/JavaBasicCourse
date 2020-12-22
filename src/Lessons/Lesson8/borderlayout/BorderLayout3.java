@@ -1,4 +1,4 @@
-package lesson8.borderlayout;
+package Lessons.Lesson8.borderlayout;
 
 import javax.swing.*;
 import java.awt.*;

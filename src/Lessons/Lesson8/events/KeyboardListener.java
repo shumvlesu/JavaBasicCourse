@@ -1,4 +1,4 @@
-package lesson8.events;
+package Lessons.Lesson8.events;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;

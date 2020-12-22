@@ -1,4 +1,4 @@
-package lesson8.graphics;
+package Lessons.Lesson8.graphics;
 
 import java.awt.*;
 import java.awt.geom.Line2D;

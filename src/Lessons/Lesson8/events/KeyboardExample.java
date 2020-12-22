@@ -1,4 +1,4 @@
-package lesson8.events;
+package Lessons.Lesson8.events;
 
 import javax.swing.*;
 import java.awt.event.*;
